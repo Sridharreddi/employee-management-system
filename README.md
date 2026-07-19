@@ -252,6 +252,4 @@ Included screenshots:
 
 **Sridhar Reddy Challa**
 
-GitHub:
-
-https://github.com/Sridharreddi
+GitHub: https://github.com/Sridharreddi
