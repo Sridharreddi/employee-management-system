@@ -1,0 +1,220 @@
+/* ==========================================
+   PROFILE PAGE
+========================================== */
+
+.my-profile-page {
+  padding: 24px;
+  background: #f7f8fc;
+  min-height: 100vh;
+}
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.my-profile-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 16px auto;
+  padding: 18px 14px;
+  background: #ffffff;
+  border: 1px solid #edf0f6;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================
+   PROFILE HEADER
+========================================== */
+
+.my-profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.my-profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ff6b00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.my-profile-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.my-profile-role {
+  display: inline-block;
+  margin: 14px 0;
+  padding: 7px 16px;
+  border-radius: 30px;
+  background: #111111;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.my-profile-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+.my-profile-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.my-profile-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  min-height: 78px;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.my-profile-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.my-profile-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #fff4eb;
+  color: #ff6b00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.my-profile-item h4 {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.my-profile-item span {
+  display: block;
+  margin-top: 6px;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.profile-buttons button {
+  width: 180px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.edit-profile {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.edit-profile:hover {
+  background: #111111;
+}
+
+.change-password {
+  background: #111111;
+  color: #fff;
+}
+
+.change-password:hover {
+  background: #ff6b00;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .my-profile-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .my-profile-page {
+    padding: 16px;
+  }
+
+  .my-profile-card {
+    padding: 25px;
+  }
+
+  .my-profile-details {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-buttons button {
+    width: 100%;
+  }
+
+  .my-profile-avatar {
+    width: 90px;
+    height: 90px;
+    font-size: 46px;
+  }
+
+  .my-profile-header h2 {
+    font-size: 26px;
+  }
+}

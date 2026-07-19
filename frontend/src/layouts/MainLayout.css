@@ -1,0 +1,13 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 180px;
+  width: calc(100% - 180px);
+  padding: 24px;
+  box-sizing: border-box;
+}

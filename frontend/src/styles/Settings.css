@@ -1,0 +1,458 @@
+/* ==========================================
+   SETTINGS PAGE
+========================================== */
+
+.settings-page {
+  padding: 22px;
+
+  background: #f7f8fc;
+
+  min-height: calc(100vh - 64px);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.employee-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+
+  flex-wrap: wrap;
+}
+
+.page-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 12px;
+
+  background: #eef2ff;
+
+  color: #ff6b00;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.employee-header h1 {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 4px;
+}
+
+.employee-header p {
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 20px;
+}
+
+/* ==========================================
+   SETTINGS GRID
+========================================== */
+
+.settings-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 18px;
+}
+
+/* ==========================================
+   SETTINGS CARD
+========================================== */
+
+.settings-card {
+  background: #ffffff;
+
+  border: 1px solid #edf0f6;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+
+  transition: 0.25s;
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.settings-card h2 {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 14px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  font-size: 13px;
+
+  color: #111827;
+
+  transition: 0.25s;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus {
+  outline: none;
+
+  border-color: #ff6b00;
+
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* ==========================================
+   TOGGLE
+========================================== */
+
+.toggle-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #edf0f6;
+}
+
+.toggle-row:last-child {
+  border-bottom: none;
+}
+
+.toggle-row span {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #374151;
+}
+
+.toggle-row input {
+  width: 18px;
+
+  height: 18px;
+
+  accent-color: #ff6b00;
+
+  cursor: pointer;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.settings-btn {
+  width: 100%;
+
+  height: 40px;
+
+  margin-bottom: 12px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.settings-btn:hover {
+  background: #ff6b00;
+
+  border-color: #ff6b00;
+
+  color: #ffffff;
+}
+
+.save-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 24px;
+
+  height: 42px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #ff6b00;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.save-btn:hover {
+  background: #4338ca;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.2);
+}
+
+.save-btn:active {
+  transform: scale(0.98);
+}
+
+.save-btn svg {
+  font-size: 15px;
+}
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-state {
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #ffffff;
+
+  border: 1px dashed #d1d5db;
+
+  border-radius: 14px;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 22px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .settings-page {
+    padding: 18px;
+  }
+
+  .employee-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .employee-header h1 {
+    font-size: 22px;
+  }
+
+  .settings-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 16px;
+  }
+
+  .settings-card {
+    padding: 18px;
+  }
+
+  .save-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .settings-page {
+    padding: 14px;
+  }
+
+  .employee-header h1 {
+    font-size: 20px;
+  }
+
+  .employee-header p {
+    font-size: 12px;
+  }
+
+  .settings-card {
+    padding: 16px;
+  }
+
+  .settings-card h2 {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    height: 40px;
+
+    font-size: 12px;
+  }
+
+  .toggle-row span {
+    font-size: 12px;
+  }
+
+  .settings-btn {
+    height: 38px;
+
+    font-size: 12px;
+  }
+
+  .save-btn {
+    height: 40px;
+
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   PREMIUM ANIMATION
+========================================== */
+
+.settings-card,
+.save-btn {
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

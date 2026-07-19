@@ -1,0 +1,464 @@
+/* ==========================================
+   REPORTS PAGE
+========================================== */
+
+.reports-page {
+  padding: 22px;
+
+  background: #f7f8fc;
+
+  min-height: calc(100vh - 64px);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.employee-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+
+  flex-wrap: wrap;
+}
+
+.page-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 12px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.employee-header h1 {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 4px;
+}
+
+.employee-header p {
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 20px;
+}
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
+
+.report-summary {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+.summary-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f6;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  transition: 0.25s;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.reports-summary-icon {
+  width: 50px;
+
+  height: 50px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+.reports-summary-icon.blue {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.reports-summary-icon.green {
+  background: #16a34a;
+  color: #fff;
+}
+
+.reports-summary-icon.orange {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.reports-summary-icon.red {
+  background: #ef4444;
+  color: #fff;
+}
+
+.summary-card h2 {
+  margin: 0;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.summary-card p {
+  margin-top: 4px;
+
+  font-size: 12px;
+
+  color: #9ca3af;
+}
+/* ==========================================
+   REPORT LIST
+========================================== */
+
+.report-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.report-card {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f6;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  transition: 0.25s;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+
+  border-color: #dbe4ff;
+}
+
+.report-card h3 {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #111827;
+
+  margin-bottom: 6px;
+}
+
+.report-card p {
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 20px;
+
+  margin-bottom: 8px;
+}
+
+.report-card span {
+  display: inline-block;
+
+  font-size: 12px;
+
+  color: #9ca3af;
+
+  background: #f8fafc;
+
+  border: 1px solid #edf0f6;
+
+  padding: 4px 10px;
+
+  border-radius: 999px;
+}
+
+/* ==========================================
+   DOWNLOAD BUTTON
+========================================== */
+
+.download-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  height: 40px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #ff6b00;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.download-btn:hover {
+  background: #111111;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.2);
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+}
+
+.download-btn svg {
+  font-size: 15px;
+}
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-state {
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #ffffff;
+
+  border: 1px dashed #d1d5db;
+
+  border-radius: 14px;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 22px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .reports-page {
+    padding: 18px;
+  }
+
+  .employee-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .employee-header h1 {
+    font-size: 22px;
+  }
+
+  .report-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reports-page {
+    padding: 16px;
+  }
+
+  .report-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .report-card {
+    padding: 18px;
+
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reports-page {
+    padding: 14px;
+  }
+
+  .employee-header h1 {
+    font-size: 20px;
+  }
+
+  .employee-header p {
+    font-size: 12px;
+  }
+
+  .summary-card {
+    padding: 16px;
+  }
+
+  .summary-icon {
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 18px;
+  }
+
+  .summary-card h2 {
+    font-size: 20px;
+  }
+
+  .report-card h3 {
+    font-size: 15px;
+  }
+
+  .report-card p {
+    font-size: 12px;
+  }
+
+  .download-btn {
+    height: 38px;
+
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.summary-card,
+.report-card {
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

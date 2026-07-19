@@ -1,0 +1,58 @@
+.hierarchy-container {
+  padding: 20px;
+}
+
+.tree {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tree ul {
+  list-style: none;
+  margin-left: 40px;
+  padding-left: 30px;
+  border-left: 3px solid #111111;
+}
+
+.tree li {
+  position: relative;
+  margin: 15px 0;
+}
+
+.tree li::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  width: 30px;
+  border-top: 3px solid #111111;
+}
+
+.employee-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  border-left: 6px solid #111111;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.employee-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.employee-designation {
+  color: #555;
+}
+
+.employee-department {
+  color: #888;
+  margin-top: 3px;
+}
